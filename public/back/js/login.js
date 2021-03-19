@@ -63,6 +63,7 @@ $(function () {
         // console.log(data);
         if (data.success) {
           console.log('登陆成功！');
+          location.href = './index.html'
         } else if (data.error == 1000) {
           console.log('用户名不存在');
           $('#login-form').data('bootstrapValidator').updateStatus('username', 'INVALID', 'userNameIncorrect')

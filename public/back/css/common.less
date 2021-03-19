@@ -1,0 +1,146 @@
+.body_bg {
+  background-color: #222d32;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.red {
+  color: #a94442;
+}
+
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mt_150 {
+  margin-top: 150px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+.panel-title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.lt-left {
+  width: 180px;
+  height: 100%;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: transform .5s linear;
+
+  .brand {
+    height: 50px;
+    line-height: 50px;
+    background-color: #367fa9;
+    text-align: center;
+    font-size: 24px;
+  }
+  .user {
+    height: 180px;
+    text-align: center;
+    margin-top: 15px;
+    img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .lt-nav {
+    text-align: center;
+    a {
+      display: block;
+      color: white;
+      padding: 10px 0;
+    }
+    a > span:first-child {
+      margin-right: 5px;
+    }
+    .lt-category {
+      // .category-item{
+      //   a{
+      //     display: block;
+      //   }
+      // }
+    }
+  }
+}
+.lt-main {
+  padding-left: 180px;
+  position: relative;
+  transition: padding-left .5s linear;
+
+  .topbar {
+    height: 50px;
+    background-color: #367fa9;
+    position: fixed;
+    width: 100%;
+    padding-left: 180px;
+    transition: padding-left .5s linear;
+    top: 0;
+    right: 0;
+    a {
+      // display: inline-block;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      span {
+        // display: inline-block;
+        color: white;
+        line-height: 50px;
+        font-size: 24px; //字体图标是字体，所以要设置字体大小
+      }
+    }
+  }
+  .main {
+    padding-top: 50px;
+    height: 1000px;
+    background-color: #ccc;
+    .breadcrumb {
+      padding: 5px 10px;
+      margin: 20px 10px;
+    }
+  }
+}
+.lt-left.hideLeft {
+  //这个坑好大，写成 .hide是不生效的！！！
+  transform: translateX(-180px);
+}
+.lt-main.hideLeft{
+  padding-left: 0px;
+}
+.topbar.hideLeft{
+  padding-left: 0px;
+}

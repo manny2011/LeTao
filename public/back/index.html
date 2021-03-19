@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="lt-left body_bg">
+      <div class="brand">
+        <span>这是标题</span>
+      </div>
+      <div class="user">
+        <img src="./images/default.png" alt="" />
+        <br />
+        <span>超级管理员</span>
+      </div>
+      <div class="lt-nav">
+        <ul>
+          <li class="lt-user">
+            <a href="#">
+              <span class="glyphicon glyphicon-user"></span>
+              <span>用户管理</span>
+            </a>
+          </li>
+          <li class="lt-category">
+            <a href="#">
+              <span class="glyphicon glyphicon-list"></span>
+              <span>分类管理</span>
+            </a>
+
+            <div class="category-item">
+              <a class="item01">一级分类</a>
+              <a class="item02">二级分类</a>
+            </div>
+          </li>
+          <li class="lt-product">
+            <a href="#">
+              <span class="glyphicon glyphicon-tags"></span>
+              <span>商品管理</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="lt-main">
+      <div class="topbar">
+        <a href="#" class="pull-left menu">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </a>
+        <a
+          href="#"
+          class="pull-right logout"
+          data-toggle="modal"
+          data-target=".logoutModal"
+        >
+          <span class="glyphicon glyphicon-log-out"></span>
+        </a>
+      </div>
+      <div class="main">
+        <!-- 面包屑导航 -->
+        <ol class="breadcrumb">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Library</a></li>
+          <li>Data</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="modal fade logoutModal" tabindex="-1">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">温馨提示</h4>
+          </div>
+          <div class="modal-body">
+            <span class="glyphicon glyphicon-info-sign"></span>
+            <span>您确定要退出后台管理系统吗</span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              取消
+            </button>
+            <button type="button" class="btn btn-primary btn-logout">退出</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/nprogress/nprogress.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/checkLoginStatus.js"></script>
+  </body>
+</html>
