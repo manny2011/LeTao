@@ -54,7 +54,7 @@ a:active {
   left: 0;
   top: 0;
   z-index: 1;
-  transition: transform .5s linear;
+  transition: transform 0.5s linear;
 
   .brand {
     height: 50px;
@@ -95,12 +95,17 @@ a:active {
       //   }
       // }
     }
+    a.current {
+      //交集选择器！
+      background-color: #1d1f21;
+      border-left: 3px solid #006699;
+    }
   }
 }
 .lt-main {
   padding-left: 180px;
   position: relative;
-  transition: padding-left .5s linear;
+  transition: padding-left 0.5s linear;
 
   .topbar {
     height: 50px;
@@ -108,7 +113,7 @@ a:active {
     position: fixed;
     width: 100%;
     padding-left: 180px;
-    transition: padding-left .5s linear;
+    transition: padding-left 0.5s linear;
     top: 0;
     right: 0;
     a {
@@ -132,15 +137,25 @@ a:active {
       padding: 5px 10px;
       margin: 20px 10px;
     }
+    .content {
+      height: 400px;
+      .left-bar {
+        height: 100%;
+      }
+      .right-bar {
+        height: 100%;
+
+      }
+    }
   }
 }
 .lt-left.hideLeft {
   //这个坑好大，写成 .hide是不生效的！！！
   transform: translateX(-180px);
 }
-.lt-main.hideLeft{
+.lt-main.hideLeft {
   padding-left: 0px;
 }
-.topbar.hideLeft{
+.topbar.hideLeft {
   padding-left: 0px;
 }

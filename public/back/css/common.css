@@ -80,6 +80,10 @@ a:active {
 .lt-left .lt-nav a > span:first-child {
   margin-right: 5px;
 }
+.lt-left .lt-nav a.current {
+  background-color: #1d1f21;
+  border-left: 3px solid #006699;
+}
 .lt-main {
   padding-left: 180px;
   position: relative;
@@ -113,6 +117,15 @@ a:active {
 .lt-main .main .breadcrumb {
   padding: 5px 10px;
   margin: 20px 10px;
+}
+.lt-main .main .content {
+  height: 400px;
+}
+.lt-main .main .content .left-bar {
+  height: 100%;
+}
+.lt-main .main .content .right-bar {
+  height: 100%;
 }
 .lt-left.hideLeft {
   transform: translateX(-180px);
