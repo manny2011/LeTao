@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
     <link rel="stylesheet" href="./lib/nprogress/nprogress.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/first.css" />
   </head>
   <body>
     <div class="lt-left body_bg">
@@ -34,8 +35,8 @@
             </a>
 
             <div class="category-item">
-              <a href='./first.html' class="item01 current">一级分类</a>
-              <a href='./second.html' class="item02">二级分类</a>
+              <a href="./first.html" class="item01 current">一级分类</a>
+              <a href="./second.html" class="item02">二级分类</a>
             </div>
           </li>
           <li class="lt-product">
@@ -68,6 +69,26 @@
           <li><a href="#">分类管理</a></li>
           <li class="active">一级分类</li>
         </ol>
+        <div class="content">
+          <a href="#" class="btn btn-default btn-add" data-toggle="modal" data-target=".addModal">添加分类</a>
+          <table class="table table-bordered first-category-table">
+            <thead>
+              <tr>
+                <td>序号</td>
+                <td>一级分类名</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pull-right">
+            <ul class="pages"></ul>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -75,10 +96,7 @@
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-            >
+            <button type="button" class="close">
               <span aria-hidden="true">&times;</span>
             </button>
             <h4 class="modal-title">温馨提示</h4>
@@ -91,7 +109,9 @@
             <button type="button" class="btn btn-default" data-dismiss="modal">
               取消
             </button>
-            <button type="button" class="btn btn-primary btn-logout">退出</button>
+            <button type="button" class="btn btn-primary btn-logout">
+              退出
+            </button>
           </div>
         </div>
         <!-- /.modal-content -->
@@ -100,11 +120,62 @@
     </div>
     <!-- /.modal -->
 
+    <div class="modal fade addModal" tabindex="-1">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">添加分类</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" id="addForm" action="#">
+              <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-1">
+                  <input type="text" name = 'categoryName' class="form-control" id="inputCategory" placeholder="input new category">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              取消
+            </button>
+            <!-- html5 新增 form 属性, 可以让表单外的按钮, 与表单关联起来(就相当于是写在了表单里面)-->
+            <button type="submit" class="btn btn-primary btn-add" form="addForm">
+              添加
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script text="text/template" id="tmpt">
+      {{each $data v i}}
+      <tr>
+        <td>{{v.id}}</td>
+        <td>{{v.categoryName}}</td>
+      </tr>
+      {{/each}}
+    </script>
+    <!-- <script type="text/template" id="tmpt">
+      {{each $data v i}}
+      <tr>
+        <td>{{v.id}}</td>
+      </tr>
+      {{/each}}
+    </script> -->
     <script src="./lib/jquery/jquery.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/bootstrap-paginator/bootstrap-paginator.js"></script>
+    <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
     <script src="./js/checkLoginStatus.js"></script>
+    <script src="./js/first.js"></script>
   </body>
 </html>

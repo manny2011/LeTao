@@ -1,0 +1,9 @@
+.main .content {
+  height: 400px;
+}
+.main .content .left-bar {
+  height: 100%;
+}
+.main .content .right-bar {
+  height: 100%;
+}

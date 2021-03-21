@@ -118,15 +118,6 @@ a:active {
   padding: 5px 10px;
   margin: 20px 10px;
 }
-.lt-main .main .content {
-  height: 400px;
-}
-.lt-main .main .content .left-bar {
-  height: 100%;
-}
-.lt-main .main .content .right-bar {
-  height: 100%;
-}
 .lt-left.hideLeft {
   transform: translateX(-180px);
 }
