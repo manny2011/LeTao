@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .first{
+      width: 100px;
+      height: 100px;
+      background-color: #128833;
+    }
+    .hideLeft{
+      transition: width 1s linear,transform 1s linear;
+      width: 10px;
+      transform: translateX(100px) rotate(30deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="first"></div>
+
+  <script>
+    var first = document.querySelector('.first')
+    first.onclick = function(){
+      this.classList.toggle('hideLeft')
+    }
+  </script>
+</body>
+</html>
