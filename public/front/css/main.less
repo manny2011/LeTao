@@ -1,112 +1,47 @@
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.lt-layout {
-  max-width: 640px;
-  min-width: 320px;
+.lt-main {
+  background-color: #fff;
   height: 100%;
-  background-color: #aaa;
   position: relative;
-  padding: 45px 0 50px 0;
-  .lt-header {
-    height: 45px;
-    background-color: #006699;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding: 0 45px;
-    p {
-      line-height: 45px;
-      font-size: 20px;
-      color: white;
-      font-weight: bold;
-    }
-    a {
-      display: block;
-      width: 45px;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      text-align: center;
-      span {
-        font-size: 26px; //可以写上面，子元素来继承！也可以直接写
-        color: white;
-        line-height: 45px;
-      }
-    }
-    a.search {
-      left: auto;
-      right: 0;
-    }
-  }
-  .lt-main {
-    background-color: #fff;
-    height: 100%;
-    position: relative;
-    .products {
-      padding: 10px;
-      li {
-        width: 33.33%;
-        float: left;
-        background-color: #aaa;
-        img {
-          width: 100%;
-          display: block;
-        }
-      }
-    }
-    .product-list {
-      padding: 0 10px;
-      .product-list-item {
-        width: 48%;
-        float: left;
-        margin-bottom: 10px;
-        a {
-          display: block;
-          background-color: #fff;
-          text-align: center;
-          border: 1px solid rgb(121, 114, 114);
-          border-radius: 8px;
-
-          img {
-            width: 60%;
-          }
-          .prices {
-            span:first-child {
-              color: red;
-            }
-          }
-          button {
-            margin-bottom: 20px;
-          }
-        }
-      }
-      .product-list-item:nth-child(even) {
-        float: right;
-      }
-    }
-  }
-  .lt-footer {
-    height: 50px;
-    background-color: #006699;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: white;
+  .products {
+    padding: 10px;
     li {
+      width: 33.33%;
       float: left;
-      width: 25%;
-      height: 100%;
-      box-sizing: border-box;
-      text-align: center;
-      font-size: 20px;
+      background-color: #aaa;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .product-list {
+    padding: 0 10px;
+    .product-list-item {
+      width: 48%;
+      float: left;
+      margin-bottom: 10px;
+      a {
+        display: block;
+        background-color: #fff;
+        text-align: center;
+        border: 1px solid rgb(121, 114, 114);
+        border-radius: 8px;
+
+        img {
+          width: 60%;
+        }
+        .prices {
+          span:first-child {
+            color: red;
+          }
+        }
+        button {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .product-list-item:nth-child(even) {
+      float: right;
     }
   }
 }

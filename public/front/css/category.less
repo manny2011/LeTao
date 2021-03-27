@@ -1,0 +1,60 @@
+.lt-main {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+  .lt-left {
+    float: left;
+    width: 90px;
+    height: 100%;
+    // background-color: yellow;
+    position: relative;
+    .lt-list-item {
+      float: left;
+      width: 100%;
+      height: 45px;
+      border-right: 1px solid #333;
+      border-bottom: 1px solid #333;
+      background-color: #aaa;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+        line-height: 45px;
+      }
+    }
+    .lt-list-item.current {
+      border-right: none;
+      background-color: rgb(226, 220, 220);
+    }
+  }
+  .lt-right {
+    // width: 100%;//触发bfc时不可强制指定此宽度，否则失效!
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    .lt-content-list-item {
+      box-sizing: border-box;
+      float: left;
+      width: 33.33%;
+      background-color: #666;
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        img {
+          width: 50%;
+          margin-bottom: 10px;
+        }
+        span {
+          color:white;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

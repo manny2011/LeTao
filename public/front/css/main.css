@@ -1,109 +1,44 @@
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.lt-layout {
-  max-width: 640px;
-  min-width: 320px;
-  height: 100%;
-  background-color: #aaa;
-  position: relative;
-  padding: 45px 0 50px 0;
-}
-.lt-layout .lt-header {
-  height: 45px;
-  background-color: #006699;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding: 0 45px;
-}
-.lt-layout .lt-header p {
-  line-height: 45px;
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-}
-.lt-layout .lt-header a {
-  display: block;
-  width: 45px;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  text-align: center;
-}
-.lt-layout .lt-header a span {
-  font-size: 26px;
-  color: white;
-  line-height: 45px;
-}
-.lt-layout .lt-header a.search {
-  left: auto;
-  right: 0;
-}
-.lt-layout .lt-main {
+.lt-main {
   background-color: #fff;
   height: 100%;
   position: relative;
 }
-.lt-layout .lt-main .products {
+.lt-main .products {
   padding: 10px;
 }
-.lt-layout .lt-main .products li {
+.lt-main .products li {
   width: 33.33%;
   float: left;
   background-color: #aaa;
 }
-.lt-layout .lt-main .products li img {
+.lt-main .products li img {
   width: 100%;
   display: block;
 }
-.lt-layout .lt-main .product-list {
+.lt-main .product-list {
   padding: 0 10px;
 }
-.lt-layout .lt-main .product-list .product-list-item {
+.lt-main .product-list .product-list-item {
   width: 48%;
   float: left;
   margin-bottom: 10px;
 }
-.lt-layout .lt-main .product-list .product-list-item a {
+.lt-main .product-list .product-list-item a {
   display: block;
   background-color: #fff;
   text-align: center;
   border: 1px solid #797272;
   border-radius: 8px;
 }
-.lt-layout .lt-main .product-list .product-list-item a img {
+.lt-main .product-list .product-list-item a img {
   width: 60%;
 }
-.lt-layout .lt-main .product-list .product-list-item a .prices span:first-child {
+.lt-main .product-list .product-list-item a .prices span:first-child {
   color: red;
 }
-.lt-layout .lt-main .product-list .product-list-item a button {
+.lt-main .product-list .product-list-item a button {
   margin-bottom: 20px;
 }
-.lt-layout .lt-main .product-list .product-list-item:nth-child(even) {
+.lt-main .product-list .product-list-item:nth-child(even) {
   float: right;
-}
-.lt-layout .lt-footer {
-  height: 50px;
-  background-color: #006699;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: white;
-}
-.lt-layout .lt-footer li {
-  float: left;
-  width: 25%;
-  height: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 20px;
 }

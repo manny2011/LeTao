@@ -1,0 +1,57 @@
+.lt-main {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+}
+.lt-main .lt-left {
+  float: left;
+  width: 90px;
+  height: 100%;
+  position: relative;
+}
+.lt-main .lt-left .lt-list-item {
+  float: left;
+  width: 100%;
+  height: 45px;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background-color: #aaa;
+}
+.lt-main .lt-left .lt-list-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  line-height: 45px;
+}
+.lt-main .lt-left .lt-list-item.current {
+  border-right: none;
+  background-color: #e2dcdc;
+}
+.lt-main .lt-right {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.lt-main .lt-right .lt-content-list-item {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  background-color: #666;
+}
+.lt-main .lt-right .lt-content-list-item a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.lt-main .lt-right .lt-content-list-item a img {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.lt-main .lt-right .lt-content-list-item a span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
